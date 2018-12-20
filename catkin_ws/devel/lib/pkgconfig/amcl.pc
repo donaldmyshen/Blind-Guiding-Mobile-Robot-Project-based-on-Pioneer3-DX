@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: amcl
+Description: Description of amcl
+Version: 1.14.2
+Cflags: -I/home/hunter/catkin_ws/devel/include -I/home/hunter/catkin_ws/src/navigation/amcl/include
+Libs: -L/home/hunter/catkin_ws/devel/lib -lamcl_sensors -lamcl_map -lamcl_pf
+Requires: nav_msgs std_srvs

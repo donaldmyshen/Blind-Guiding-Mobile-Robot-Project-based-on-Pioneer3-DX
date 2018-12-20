@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: openni_launch
+Description: Description of openni_launch
+Version: 1.11.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: 

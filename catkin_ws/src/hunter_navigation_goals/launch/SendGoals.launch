@@ -1,0 +1,40 @@
+<launch>
+ <node name="recognizer" pkg="pocketsphinx" type="recognizer.py">
+	<param name="lm" value="$(find hunter_navigation_goals)/config/nav_commands.lm"/>  
+	<param name="dict" value="$(find hunter_navigation_goals)/config/nav_commands.dic"/>
+	</node>
+
+  <node name="sound_play" pkg="sound_play" type="soundplay_node.py"/>
+
+  <node name="voice_cmd_vel" pkg="pioneer_utils" type="voice_cmd_vel.py" output="screen">
+    <param name="map_locations" value="$(find pioneer_utils)/main/locations.txt"/>
+    
+    <rosparam>
+       cmd_vel_topic: cmd_vel
+     </rosparam>
+  </node>
+
+
+<node output="screen" name="SendGoals" pkg="hunter_navigation_goals" type="SendGoalsNode">
+<param name="goal_A_name" value="door"/>
+<param name="goal_B_name" value="office"/>
+<param name="goal_C_name" value="gap"/>
+<param name="goal_D_name" value="center"/>
+<param name="stop_name" value="stop"/>
+<param name="goal_A_x" value="-4.000"/>
+<param name="goal_A_y" value="4.000"/>
+<param name="goal_A_th" value="1.658"/>
+<param name="goal_B_x" value="10.000"/>
+<param name="goal_B_y" value="-10.000"/>
+<param name="goal_B_th" value="0"/>
+<param name="goal_C_x" value="-3.000"/>
+<param name="goal_C_y" value="8.000"/>
+<param name="goal_C_th" value="0"/>
+<param name="goal_D_x" value="8.000"/>
+<param name="goal_D_y" value="2.000"/>
+<param name="goal_D_th" value="0.752"/>
+</node>
+
+
+
+</launch>

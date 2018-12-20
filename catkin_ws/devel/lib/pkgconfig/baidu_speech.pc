@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: baidu_speech
+Description: Description of baidu_speech
+Version: 0.1.1
+Cflags: -I/home/hunter/catkin_ws/devel/include
+Libs: -L/home/hunter/catkin_ws/devel/lib -lsimple_voice
+Requires: rospy message_runtime std_msgs

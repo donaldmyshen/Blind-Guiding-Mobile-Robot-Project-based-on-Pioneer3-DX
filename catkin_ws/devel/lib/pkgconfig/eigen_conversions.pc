@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: eigen_conversions
+Description: Description of eigen_conversions
+Version: 1.11.9
+Cflags: -I/home/hunter/catkin_ws/src/geometry/eigen_conversions/include -I/usr/include/eigen3 -I/opt/ros/indigo/include
+Libs: -L/home/hunter/catkin_ws/devel/lib -leigen_conversions -l:/opt/ros/indigo/lib/liborocos-kdl.so.1.3.0
+Requires: geometry_msgs std_msgs

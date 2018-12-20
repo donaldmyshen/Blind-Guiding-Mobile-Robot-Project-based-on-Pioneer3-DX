@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: rotate_recovery
+Description: Description of rotate_recovery
+Version: 1.14.2
+Cflags: -I/home/hunter/catkin_ws/src/navigation/rotate_recovery/include
+Libs: -L/home/hunter/catkin_ws/devel/lib -lrotate_recovery
+Requires: roscpp pluginlib

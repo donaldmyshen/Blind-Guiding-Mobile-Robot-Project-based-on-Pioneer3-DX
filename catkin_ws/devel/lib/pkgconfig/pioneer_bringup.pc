@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: pioneer_bringup
+Description: Description of pioneer_bringup
+Version: 1.1.2
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: 

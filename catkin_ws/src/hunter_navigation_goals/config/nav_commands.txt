@@ -1,0 +1,5 @@
+door
+gap
+center
+office
+stop

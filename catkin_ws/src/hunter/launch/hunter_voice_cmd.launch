@@ -1,0 +1,21 @@
+<launch>
+
+
+<!-- Starting rosaria driver for motors and encoders -->
+  <node name="rosaria" pkg="rosaria" type="RosAria" args="_port:=/dev/ttyUSB0">
+  <remap from="rosaria/cmd_vel" to="cmd_vel"/>
+  <remap from="rosaria/pose" to="odom"/>
+  </node>
+
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py">
+    <param name="lm" value="$(find pocketsphinx)/demo/voice_cmd.lm"/>
+    <param name="dict" value="$(find pocketsphinx)/demo/voice_cmd.dic"/>
+  </node>
+
+  <node name="voice_cmd_vel" pkg="pocketsphinx" type="voice_cmd_vel.py" output="screen">
+
+  </node>
+
+
+
+</launch>

@@ -1,0 +1,40 @@
+<launch>
+<node pkg="rosaria" type="RosAria" name="RosAria" output="screen">
+		<param name="port" value="/dev/ttyUSB0" />
+		<remap from="RosAria/cmd_vel" to="cmd_vel" />
+		<remap from="RosAria/pose" to="pose" />
+</node>
+
+<group>
+	<node name="urg_node" pkg="urg_node" type="urg_node" output="screen">
+		<param name="ip_address" value="192.168.0.10"/>
+    		<param name="serial_port" value="/dev/ttyACM0"/>
+   	 	<param name="serial_baud" value="115200"/>
+    		<param name="frame_id" value="laser"/>
+    		<param name="calibrate_time" value="true"/>
+    		<param name="publish_intensity" value="false"/>
+    		<param name="publish_multiecho" value="false"/>
+    		<param name="angle_min" value="-1.5707963"/>
+    		<param name="angle_max" value="1.5707963"/>
+	</node>
+	
+	<node pkg="tf" type="static_transform_publisher" name="baselink_laser_tf" args="0.0 0.0 0.0 0.0 0.0 0.0 base_link laser 50" />
+ 
+</group>
+
+<include file="$(find gmapping)/launch/slam_gmapping_pr2.launch" />
+
+  <!--- Run AMCL -->
+  <include file="$(find p3dx_navigation)/launch/amcl.launch" />
+
+<!--<node name="amcl" pkg="amcl" type="amcl" output="screen"/>-->
+
+  <!--- Run move_base with parameters -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/move_base_params.yaml" command="load" />
+  </node>
+</launch>

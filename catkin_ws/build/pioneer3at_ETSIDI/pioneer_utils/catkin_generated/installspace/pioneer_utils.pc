@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/install
+
+Name: pioneer_utils
+Description: Description of pioneer_utils
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/install/lib 
+Requires: roscpp rospy std_msgs message_runtime tf

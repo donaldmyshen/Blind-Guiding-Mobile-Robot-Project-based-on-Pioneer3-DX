@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: skeleton_markers
+Description: Description of skeleton_markers
+Version: 0.4.1
+Cflags: -I/home/hunter/catkin_ws/devel/include
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: rospy roscpp message_runtime openni_camera openni_tracker tf visualization_msgs std_msgs geometry_msgs

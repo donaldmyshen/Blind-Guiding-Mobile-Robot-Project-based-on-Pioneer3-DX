@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: clear_costmap_recovery
+Description: Description of clear_costmap_recovery
+Version: 1.14.2
+Cflags: -I/home/hunter/catkin_ws/src/navigation/clear_costmap_recovery/include
+Libs: -L/home/hunter/catkin_ws/devel/lib -lclear_costmap_recovery
+Requires: costmap_2d nav_core pluginlib roscpp tf

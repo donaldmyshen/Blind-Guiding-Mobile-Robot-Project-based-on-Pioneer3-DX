@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/install
+
+Name: pioneer_ros
+Description: Description of pioneer_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/install/lib 
+Requires: 

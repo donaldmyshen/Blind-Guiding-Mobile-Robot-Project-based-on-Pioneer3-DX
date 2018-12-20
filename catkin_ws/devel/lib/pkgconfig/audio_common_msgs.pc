@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: audio_common_msgs
+Description: Description of audio_common_msgs
+Version: 0.3.1
+Cflags: -I/home/hunter/catkin_ws/devel/include
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: message_runtime

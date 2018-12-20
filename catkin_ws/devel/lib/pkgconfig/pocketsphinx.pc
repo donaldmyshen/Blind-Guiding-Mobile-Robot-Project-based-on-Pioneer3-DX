@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: pocketsphinx
+Description: Description of pocketsphinx
+Version: 0.4.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: 

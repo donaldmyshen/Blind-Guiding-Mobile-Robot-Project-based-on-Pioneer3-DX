@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/install
+
+Name: hunter_navigation_goals
+Description: Description of hunter_navigation_goals
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/install/lib 
+Requires: 

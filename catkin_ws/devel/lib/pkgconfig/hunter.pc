@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: hunter
+Description: Description of hunter
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: 

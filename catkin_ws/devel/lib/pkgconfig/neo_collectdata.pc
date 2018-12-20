@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: neo_collectdata
+Description: Description of neo_collectdata
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: 

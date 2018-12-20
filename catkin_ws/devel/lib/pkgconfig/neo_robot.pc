@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: neo_robot
+Description: Description of neo_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: 

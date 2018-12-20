@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/install
+
+Name: pioneer_control
+Description: Description of pioneer_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/install/lib 
+Requires: 

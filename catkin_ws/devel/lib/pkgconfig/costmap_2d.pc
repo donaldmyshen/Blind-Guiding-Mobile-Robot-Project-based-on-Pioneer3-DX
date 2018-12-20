@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: costmap_2d
+Description: Description of costmap_2d
+Version: 1.14.2
+Cflags: -I/home/hunter/catkin_ws/devel/include -I/home/hunter/catkin_ws/src/navigation/costmap_2d/include -I/usr/include/pcl-1.7 -I/usr/include/eigen3 -I/usr/include -I/usr/include/ni -I/usr/include/vtk-5.8
+Libs: -L/home/hunter/catkin_ws/devel/lib -lcostmap_2d -llayers -l:/usr/lib/libpcl_common.so -l:/usr/lib/libpcl_octree.so -l:/usr/lib/libpcl_io.so -l:/usr/lib/libpcl_kdtree.so -l:/usr/lib/libpcl_search.so -l:/usr/lib/libpcl_sample_consensus.so -l:/usr/lib/libpcl_filters.so -l:/usr/lib/libpcl_features.so -l:/usr/lib/libpcl_keypoints.so -l:/usr/lib/libpcl_segmentation.so -l:/usr/lib/libpcl_visualization.so -l:/usr/lib/libpcl_outofcore.so -l:/usr/lib/libpcl_registration.so -l:/usr/lib/libpcl_recognition.so -l:/usr/lib/libpcl_surface.so -l:/usr/lib/libpcl_people.so -l:/usr/lib/libpcl_tracking.so -l:/usr/lib/libpcl_apps.so -l:/usr/lib/x86_64-linux-gnu/libboost_filesystem.so -l:/usr/lib/x86_64-linux-gnu/libboost_date_time.so -l:/usr/lib/x86_64-linux-gnu/libboost_iostreams.so -l:/usr/lib/x86_64-linux-gnu/libboost_serialization.so -l:/usr/lib/x86_64-linux-gnu/libqhull.so -l:/usr/lib/libOpenNI.so /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a -l:/usr/lib/libvtkCommon.so.5.8.0 -l:/usr/lib/libvtkRendering.so.5.8.0 -l:/usr/lib/libvtkHybrid.so.5.8.0 -l:/usr/lib/libvtkCharts.so.5.8.0 -l:/usr/lib/x86_64-linux-gnu/libboost_system.so -l:/usr/lib/x86_64-linux-gnu/libboost_thread.so -l:/usr/lib/x86_64-linux-gnu/libpthread.so
+Requires: dynamic_reconfigure geometry_msgs laser_geometry map_msgs message_filters message_runtime nav_msgs pcl_ros pluginlib roscpp sensor_msgs std_msgs tf visualization_msgs voxel_grid

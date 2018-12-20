@@ -1,0 +1,16 @@
+\subsubsection usage Usage
+\verbatim
+<node name="OpenNI" pkg="openni_camera" type="OpenNI">
+  <param name="image_mode" type="int" value="2" />
+  <param name="depth_mode" type="int" value="2" />
+  <param name="depth_registration" type="bool" value="False" />
+  <param name="data_skip" type="int" value="0" />
+  <param name="depth_time_offset" type="double" value="0.0" />
+  <param name="image_time_offset" type="double" value="0.0" />
+  <param name="depth_ir_offset_x" type="double" value="5.0" />
+  <param name="depth_ir_offset_y" type="double" value="4.0" />
+  <param name="z_offset_mm" type="int" value="0" />
+  <param name="z_scaling" type="double" value="1.0" />
+</node>
+\endverbatim
+

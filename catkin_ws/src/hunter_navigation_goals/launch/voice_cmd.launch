@@ -1,0 +1,8 @@
+<launch>
+
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py">
+    <param name="lm" value="$(find hunter_navigation_goals)/config/nav_commands.lm"/>
+    <param name="dict" value="$(find hunter_navigation_goals)/config/nav_commands.dic"/>
+  </node>
+
+</launch>

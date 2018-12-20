@@ -1,0 +1,8 @@
+prefix=/home/hunter/catkin_ws/devel
+
+Name: audio_play
+Description: Description of audio_play
+Version: 0.3.1
+Cflags: 
+Libs: -L/home/hunter/catkin_ws/devel/lib 
+Requires: 

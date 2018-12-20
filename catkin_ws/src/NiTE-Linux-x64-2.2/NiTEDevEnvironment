@@ -1,0 +1,2 @@
+export NITE2_INCLUDE=/home/amrl/catkin_ws/src/NiTE-Linux-x64-2.2/Include
+export NITE2_REDIST64=/home/amrl/catkin_ws/src/NiTE-Linux-x64-2.2/Redist

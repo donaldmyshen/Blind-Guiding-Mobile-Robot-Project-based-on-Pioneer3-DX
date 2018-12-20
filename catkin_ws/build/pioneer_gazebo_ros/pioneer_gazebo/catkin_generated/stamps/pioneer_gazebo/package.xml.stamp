@@ -1,0 +1,19 @@
+<package>
+  <name>pioneer_gazebo</name>
+  <version>0.1.0</version>
+  <description>pioneer_gazebo</description>
+  <maintainer email="jenjen.chung88@gmail.com">Jen Jen Chung</maintainer>
+
+  <license>BSD</license>
+
+  <author email="jenjen.chung88@gmail.com">Jen Jen Chung</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>pioneer_description</run_depend>
+  <run_depend>pioneer_control</run_depend> 
+  <run_depend>gazebo_ros</run_depend> 
+
+  <export>
+  </export>
+</package>
