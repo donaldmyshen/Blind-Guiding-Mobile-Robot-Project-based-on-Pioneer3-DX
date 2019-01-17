@@ -20,4 +20,44 @@ You can go to catkin_ws/src/hunter/launch find most of the idea of my project.
     3. Hunter_navigation_goals: Set the target by coordinate, you can change the frame to choose the local coordinate or global coordinate.
     
    c. Featured function:   
+     1. Audio control
+     2. Audio feedback
+     3. Skeleton tracker
      Waiting. 
+Part of the implementation command: 
+------------------------------------------------------------------------------------------------------------------------------------------
+All the command need to be run in the workspace, our workspace is:  
+  $~/catkin_ws 
+And you’d better run the following command before use run the ros nodes or packages: 
+  $. devel/setup.bash 
+1. Gmapping: 
+  $ roslaunch hunter Hunter_gmapping.launch 
+  $ roslaunch hunter Hunter_gmapping_rviz.launch  
+  Save the map: 
+  $ rosrun map_server map_server –f  <name> 
+  Keyboard Control: 
+  $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
+  Voice Control: 
+  $ roslaunch hunter_navigatino_goal voice_cmd.launch 
+2. Navigation: 
+  $ roslaunch hunter Hunter_navigation.launch 
+  $ roslaunch hunter Hunter_navigation_rviz.launch  
+  Reset localization: 
+  $ rosservice call /global_localization 
+3. Send goal Directly send goal: 
+  $ roslaunch hunter_navigation_goals Hunter_navigation_goals.launch 
+  Send goal by voice control: 
+  $ roslaunch hunter_navigation_goals SendGoal.launch 
+4. Voice feedback         
+  $ roslaunch ‘/home/hunter/catkin_ws/src/pioneer3at_ETSIDI/pioneer_utils/voice_audio/launch/voice_cmd.launch 
+  Check output: 
+  $ rostopic echo recognizer/output 
+5. Voice recognize 
+  $ rosrun pocketsphinx recognizer.py 
+6. Kinect test         
+  $ cd catkin_ws/src/libfreenect2/build/bin         
+  $ . Pronect 
+7. Skeleton tracker 
+  $ cd NiTE-Linux-x64-2.2/Samples/Bin 
+  $ . UserViewer
+
